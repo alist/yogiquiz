@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		792E2D7216B447B300493A66 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792E2D7116B447B300493A66 /* UIKit.framework */; };
+		792E2D7416B447B300493A66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792E2D7316B447B300493A66 /* Foundation.framework */; };
+		792E2D7616B447B300493A66 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792E2D7516B447B300493A66 /* CoreGraphics.framework */; };
+		792E2D7C16B447B300493A66 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 792E2D7A16B447B300493A66 /* InfoPlist.strings */; };
+		792E2D7E16B447B300493A66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 792E2D7D16B447B300493A66 /* main.m */; };
+		792E2D8216B447B300493A66 /* SMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 792E2D8116B447B300493A66 /* SMAppDelegate.m */; };
+		792E2D8416B447B300493A66 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 792E2D8316B447B300493A66 /* Default.png */; };
+		792E2D8616B447B300493A66 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 792E2D8516B447B300493A66 /* Default@2x.png */; };
+		792E2D8816B447B300493A66 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 792E2D8716B447B300493A66 /* Default-568h@2x.png */; };
+		792E2D8B16B447B300493A66 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792E2D8916B447B300493A66 /* MainStoryboard_iPhone.storyboard */; };
+		792E2D8E16B447B300493A66 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792E2D8C16B447B300493A66 /* MainStoryboard_iPad.storyboard */; };
+		792E2D9116B447B300493A66 /* SMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792E2D9016B447B300493A66 /* SMViewController.m */; };
+		792E2D9C16B454FB00493A66 /* background-mountains.png in Resources */ = {isa = PBXBuildFile; fileRef = 792E2D9916B454FB00493A66 /* background-mountains.png */; };
+		792E2D9D16B454FB00493A66 /* mentor-talk270x317.png in Resources */ = {isa = PBXBuildFile; fileRef = 792E2D9A16B454FB00493A66 /* mentor-talk270x317.png */; };
+		792E2D9E16B454FB00493A66 /* mentor400x470.png in Resources */ = {isa = PBXBuildFile; fileRef = 792E2D9B16B454FB00493A66 /* mentor400x470.png */; };
+		792E2DA116B45DE200493A66 /* mentor-idle270x317.png in Resources */ = {isa = PBXBuildFile; fileRef = 792E2D9F16B45DE200493A66 /* mentor-idle270x317.png */; };
+		792E2DA216B45DE200493A66 /* mentor-sleep270x317.png in Resources */ = {isa = PBXBuildFile; fileRef = 792E2DA016B45DE200493A66 /* mentor-sleep270x317.png */; };
+		792E2DA416B4606900493A66 /* taptap150x130.png in Resources */ = {isa = PBXBuildFile; fileRef = 792E2DA316B4606900493A66 /* taptap150x130.png */; };
+		792E2DA616B46BD700493A66 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792E2DA516B46BD700493A66 /* QuartzCore.framework */; };
+		792E2DA916B479E300493A66 /* SMFoodSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792E2DA816B479E300493A66 /* SMFoodSelectViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		792E2D6D16B447B300493A66 /* suga mngr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "suga mngr.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		792E2D7116B447B300493A66 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		792E2D7316B447B300493A66 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		792E2D7516B447B300493A66 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		792E2D7916B447B300493A66 /* suga mngr-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "suga mngr-Info.plist"; sourceTree = "<group>"; };
+		792E2D7B16B447B300493A66 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		792E2D7D16B447B300493A66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		792E2D7F16B447B300493A66 /* suga mngr-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "suga mngr-Prefix.pch"; sourceTree = "<group>"; };
+		792E2D8016B447B300493A66 /* SMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAppDelegate.h; sourceTree = "<group>"; };
+		792E2D8116B447B300493A66 /* SMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAppDelegate.m; sourceTree = "<group>"; };
+		792E2D8316B447B300493A66 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		792E2D8516B447B300493A66 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		792E2D8716B447B300493A66 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		792E2D8A16B447B300493A66 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		792E2D8D16B447B300493A66 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		792E2D8F16B447B300493A66 /* SMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMViewController.h; sourceTree = "<group>"; };
+		792E2D9016B447B300493A66 /* SMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMViewController.m; sourceTree = "<group>"; };
+		792E2D9916B454FB00493A66 /* background-mountains.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-mountains.png"; sourceTree = "<group>"; };
+		792E2D9A16B454FB00493A66 /* mentor-talk270x317.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mentor-talk270x317.png"; sourceTree = "<group>"; };
+		792E2D9B16B454FB00493A66 /* mentor400x470.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mentor400x470.png; sourceTree = "<group>"; };
+		792E2D9F16B45DE200493A66 /* mentor-idle270x317.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mentor-idle270x317.png"; sourceTree = "<group>"; };
+		792E2DA016B45DE200493A66 /* mentor-sleep270x317.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mentor-sleep270x317.png"; sourceTree = "<group>"; };
+		792E2DA316B4606900493A66 /* taptap150x130.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taptap150x130.png; sourceTree = "<group>"; };
+		792E2DA516B46BD700493A66 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		792E2DA716B479E300493A66 /* SMFoodSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFoodSelectViewController.h; sourceTree = "<group>"; };
+		792E2DA816B479E300493A66 /* SMFoodSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMFoodSelectViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		792E2D6A16B447B300493A66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				792E2DA616B46BD700493A66 /* QuartzCore.framework in Frameworks */,
+				792E2D7216B447B300493A66 /* UIKit.framework in Frameworks */,
+				792E2D7416B447B300493A66 /* Foundation.framework in Frameworks */,
+				792E2D7616B447B300493A66 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		792E2D6216B447B300493A66 = {
+			isa = PBXGroup;
+			children = (
+				792E2D7716B447B300493A66 /* suga mngr */,
+				792E2D7016B447B300493A66 /* Frameworks */,
+				792E2D6E16B447B300493A66 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		792E2D6E16B447B300493A66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				792E2D6D16B447B300493A66 /* suga mngr.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		792E2D7016B447B300493A66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				792E2DA516B46BD700493A66 /* QuartzCore.framework */,
+				792E2D7116B447B300493A66 /* UIKit.framework */,
+				792E2D7316B447B300493A66 /* Foundation.framework */,
+				792E2D7516B447B300493A66 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		792E2D7716B447B300493A66 /* suga mngr */ = {
+			isa = PBXGroup;
+			children = (
+				792E2D9816B454FB00493A66 /* assets */,
+				792E2D8016B447B300493A66 /* SMAppDelegate.h */,
+				792E2D8116B447B300493A66 /* SMAppDelegate.m */,
+				792E2D8916B447B300493A66 /* MainStoryboard_iPhone.storyboard */,
+				792E2D8C16B447B300493A66 /* MainStoryboard_iPad.storyboard */,
+				792E2D8F16B447B300493A66 /* SMViewController.h */,
+				792E2D9016B447B300493A66 /* SMViewController.m */,
+				792E2D7816B447B300493A66 /* Supporting Files */,
+				792E2DA716B479E300493A66 /* SMFoodSelectViewController.h */,
+				792E2DA816B479E300493A66 /* SMFoodSelectViewController.m */,
+			);
+			path = "suga mngr";
+			sourceTree = "<group>";
+		};
+		792E2D7816B447B300493A66 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				792E2D7916B447B300493A66 /* suga mngr-Info.plist */,
+				792E2D7A16B447B300493A66 /* InfoPlist.strings */,
+				792E2D7D16B447B300493A66 /* main.m */,
+				792E2D7F16B447B300493A66 /* suga mngr-Prefix.pch */,
+				792E2D8316B447B300493A66 /* Default.png */,
+				792E2D8516B447B300493A66 /* Default@2x.png */,
+				792E2D8716B447B300493A66 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		792E2D9816B454FB00493A66 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				792E2DA316B4606900493A66 /* taptap150x130.png */,
+				792E2D9F16B45DE200493A66 /* mentor-idle270x317.png */,
+				792E2DA016B45DE200493A66 /* mentor-sleep270x317.png */,
+				792E2D9916B454FB00493A66 /* background-mountains.png */,
+				792E2D9A16B454FB00493A66 /* mentor-talk270x317.png */,
+				792E2D9B16B454FB00493A66 /* mentor400x470.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		792E2D6C16B447B300493A66 /* suga mngr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 792E2D9416B447B300493A66 /* Build configuration list for PBXNativeTarget "suga mngr" */;
+			buildPhases = (
+				792E2D6916B447B300493A66 /* Sources */,
+				792E2D6A16B447B300493A66 /* Frameworks */,
+				792E2D6B16B447B300493A66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "suga mngr";
+			productName = "suga mngr";
+			productReference = 792E2D6D16B447B300493A66 /* suga mngr.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		792E2D6416B447B300493A66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SM;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "pancreas crew";
+			};
+			buildConfigurationList = 792E2D6716B447B300493A66 /* Build configuration list for PBXProject "suga mngr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 792E2D6216B447B300493A66;
+			productRefGroup = 792E2D6E16B447B300493A66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				792E2D6C16B447B300493A66 /* suga mngr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		792E2D6B16B447B300493A66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				792E2D7C16B447B300493A66 /* InfoPlist.strings in Resources */,
+				792E2D8416B447B300493A66 /* Default.png in Resources */,
+				792E2D8616B447B300493A66 /* Default@2x.png in Resources */,
+				792E2D8816B447B300493A66 /* Default-568h@2x.png in Resources */,
+				792E2D8B16B447B300493A66 /* MainStoryboard_iPhone.storyboard in Resources */,
+				792E2D8E16B447B300493A66 /* MainStoryboard_iPad.storyboard in Resources */,
+				792E2D9C16B454FB00493A66 /* background-mountains.png in Resources */,
+				792E2D9D16B454FB00493A66 /* mentor-talk270x317.png in Resources */,
+				792E2D9E16B454FB00493A66 /* mentor400x470.png in Resources */,
+				792E2DA116B45DE200493A66 /* mentor-idle270x317.png in Resources */,
+				792E2DA216B45DE200493A66 /* mentor-sleep270x317.png in Resources */,
+				792E2DA416B4606900493A66 /* taptap150x130.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		792E2D6916B447B300493A66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				792E2D7E16B447B300493A66 /* main.m in Sources */,
+				792E2D8216B447B300493A66 /* SMAppDelegate.m in Sources */,
+				792E2D9116B447B300493A66 /* SMViewController.m in Sources */,
+				792E2DA916B479E300493A66 /* SMFoodSelectViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		792E2D7A16B447B300493A66 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				792E2D7B16B447B300493A66 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		792E2D8916B447B300493A66 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				792E2D8A16B447B300493A66 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		792E2D8C16B447B300493A66 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				792E2D8D16B447B300493A66 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		792E2D9216B447B300493A66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		792E2D9316B447B300493A66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		792E2D9516B447B300493A66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "suga mngr/suga mngr-Prefix.pch";
+				INFOPLIST_FILE = "suga mngr/suga mngr-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		792E2D9616B447B300493A66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "suga mngr/suga mngr-Prefix.pch";
+				INFOPLIST_FILE = "suga mngr/suga mngr-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		792E2D6716B447B300493A66 /* Build configuration list for PBXProject "suga mngr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				792E2D9216B447B300493A66 /* Debug */,
+				792E2D9316B447B300493A66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		792E2D9416B447B300493A66 /* Build configuration list for PBXNativeTarget "suga mngr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				792E2D9516B447B300493A66 /* Debug */,
+				792E2D9616B447B300493A66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 792E2D6416B447B300493A66 /* Project object */;
+}

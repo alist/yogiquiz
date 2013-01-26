@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="7TQ-Uz-Dwn">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+    </dependencies>
+    <scenes>
+        <!--Food Select View Controller-->
+        <scene sceneID="xfb-Tr-mKW">
+            <objects>
+                <viewController id="aXL-q5-oGd" customClass="SMFoodSelectViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NWm-us-MTG">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZSI-AK-HJX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GUo-hp-kgs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-116" y="-259"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" id="2" customClass="SMViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background-mountains.png" id="CkF-Ua-O6w">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="mentor-sleep270x317.png" id="mul-Ug-HGJ">
+                                <rect key="frame" x="33" y="449" width="274" height="344"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="9vv-vn-i1R" appends="YES" id="gE2-o2-pac"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="{           }" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UP4-zP-aEz">
+                                <rect key="frame" x="140" y="121" width="550" height="192"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.72999999999999998" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="143"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ZZzzzzz...." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kng-Uc-jWi">
+                                <rect key="frame" x="222" y="163" width="368" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="taptap150x130.png" id="BXI-ya-kpC">
+                                <rect key="frame" x="316" y="399" width="150" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eff-8r-xeL"/>
+                    <connections>
+                        <outlet property="mentorImageView" destination="mul-Ug-HGJ" id="ePv-t9-lfq"/>
+                        <outlet property="mentorSpeechLabel" destination="kng-Uc-jWi" id="wTN-r0-0I1"/>
+                        <outlet property="taptapImageView" destination="BXI-ya-kpC" id="8Jz-QB-6lw"/>
+                        <segue destination="aXL-q5-oGd" kind="push" identifier="a" id="Zrm-K9-e9p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="9vv-vn-i1R">
+                    <connections>
+                        <action selector="touchGestureRecognizerRecognized:" destination="2" id="R5M-cl-hI5"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-1283" y="-248"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0gP-WK-IrO">
+            <objects>
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="7TQ-Uz-Dwn" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dnU-Dr-9hd">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="OHY-ih-6FU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="saa-JJ-6E6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background-mountains.png" width="768" height="1024"/>
+        <image name="mentor-sleep270x317.png" width="270" height="317"/>
+        <image name="taptap150x130.png" width="150" height="130"/>
+    </resources>
+    <classes>
+        <class className="SMFoodSelectViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SMFoodSelectViewController.h"/>
+        </class>
+        <class className="SMViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SMViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="touchGestureRecognizerRecognized:"/>
+                <relationship kind="outlet" name="mentorImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="mentorSpeechLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="taptapImageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
