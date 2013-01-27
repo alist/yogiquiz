@@ -31,4 +31,6 @@ typedef enum {
 - (IBAction)touchGestureRecognizerRecognized:(id)sender;
 -(void)performStateAnimate;
 
+-(void) advanceGameState;
+-(void) setupForUserInputWait;
 @end

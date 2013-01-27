@@ -92,6 +92,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.975308642" blue="0.975308642" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" id="Pho-Nw-SeJ" userLabel="completionOverlayImageView">
+                                <rect key="frame" x="0.0" y="-10" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -117,20 +121,17 @@
                         <outlet property="s0iv" destination="BAL-V6-16C" id="fUB-jg-hPj"/>
                         <outlet property="s1iv" destination="J6N-dt-c7D" id="1w3-EF-JHK"/>
                         <outlet property="s2iv" destination="EEe-K1-It9" id="29r-tN-GNz"/>
+                        <segue destination="Lvw-II-TMn" kind="push" identifier="b" id="VaN-vR-ycd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GUo-hp-kgs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Pho-Nw-SeJ" userLabel="completionOverlayImageView">
-                    <rect key="frame" x="0.0" y="-20" width="768" height="1024"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
                 <tapGestureRecognizer id="amL-8R-EBV">
                     <connections>
                         <action selector="tapHappenedWithRecognizer:" destination="aXL-q5-oGd" id="Bv6-Ye-HXi"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-346" y="-1323"/>
+            <point key="canvasLocation" x="-202" y="-1627"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4">
@@ -199,11 +200,310 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="2" kind="relationship" relationship="rootViewController" id="OHY-ih-6FU"/>
+                        <segue destination="9LH-Pm-9wB" kind="relationship" relationship="rootViewController" id="uVC-b0-GTB"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="saa-JJ-6E6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="n4g-U9-mzB">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" id="9LH-Pm-9wB" customClass="SMViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Re5-ZH-etc">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background-mountains.png" id="fNi-S2-Aqq">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="mentor-sleep270x317.png" id="0Zl-Rp-CfL">
+                                <rect key="frame" x="33" y="449" width="274" height="344"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="1ep-uc-tqv" appends="YES" id="21Y-Yd-kSV"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="{           }" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RrS-6I-o1b">
+                                <rect key="frame" x="140" y="121" width="550" height="192"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.72999999999999998" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="143"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ZZzzzzz...." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gbR-TV-fk3">
+                                <rect key="frame" x="222" y="163" width="368" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="taptap150x130.png" id="3sh-iU-eKR">
+                                <rect key="frame" x="316" y="399" width="150" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="esK-uB-mUK"/>
+                    <connections>
+                        <outlet property="mentorImageView" destination="0Zl-Rp-CfL" id="4Ue-wT-okY"/>
+                        <outlet property="mentorSpeechLabel" destination="gbR-TV-fk3" id="iRC-Yy-CwJ"/>
+                        <outlet property="taptapImageView" destination="3sh-iU-eKR" id="Dy6-eg-kmY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jqN-eo-UPR" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="1ep-uc-tqv">
+                    <connections>
+                        <action selector="touchGestureRecognizerRecognized:" destination="9LH-Pm-9wB" id="BJp-qC-yUD"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-1283" y="-248"/>
+        </scene>
+        <!--Yogi2 Controller-->
+        <scene sceneID="pxw-Bk-dc0">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" id="Lvw-II-TMn" customClass="SMYogi2Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JTb-Jx-DeA">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background-mountains.png" id="S8Y-3m-939">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="mentor-sleep270x317.png" id="Yd2-5G-tlM">
+                                <rect key="frame" x="33" y="449" width="274" height="344"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="WDw-2i-q4R" appends="YES" id="pr4-HE-N8X"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="{           }" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G9T-iH-1LK">
+                                <rect key="frame" x="140" y="121" width="550" height="192"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.72999999999999998" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="143"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ZZzzzzz...." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B8m-dg-Ls3">
+                                <rect key="frame" x="222" y="163" width="368" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="taptap150x130.png" id="XeQ-lg-3a1">
+                                <rect key="frame" x="316" y="399" width="150" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0Xm-BM-AGW"/>
+                    <connections>
+                        <outlet property="mentorImageView" destination="Yd2-5G-tlM" id="0mv-nF-hcA"/>
+                        <outlet property="mentorSpeechLabel" destination="B8m-dg-Ls3" id="eBX-X7-Spy"/>
+                        <outlet property="taptapImageView" destination="XeQ-lg-3a1" id="Faj-De-sCs"/>
+                        <segue destination="btG-J5-tHp" kind="push" identifier="a" id="6GT-bv-CUy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JmN-f2-IGU" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="WDw-2i-q4R">
+                    <connections>
+                        <action selector="touchGestureRecognizerRecognized:" destination="Lvw-II-TMn" id="kbx-5H-AZU"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-1332" y="-2240"/>
+        </scene>
+        <!--Food Select View Controller-->
+        <scene sceneID="fl5-vX-KJ3">
+            <objects>
+                <viewController id="btG-J5-tHp" customClass="SMFoodSelectViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yom-Ek-lSc">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background-quiz.png" id="sef-PX-0IJ">
+                                <rect key="frame" x="0.0" y="-2" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="Open_Door_Gastropub_steak_n_eggs.png" id="oa3-dR-AXt">
+                                <rect key="frame" x="72" y="20" width="200" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.975308642" blue="0.975308642" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="Egg_Sandwiches.png" id="COB-zI-BmS">
+                                <rect key="frame" x="304" y="20" width="200" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.975308642" blue="0.975308642" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="honey-nut-cheerios-cereal-single-serve6-cups-1.png" id="E1H-xO-yik">
+                                <rect key="frame" x="538" y="20" width="200" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.975308642" blue="0.975308642" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="33624Pizza-Slice2.png" id="RQ9-LA-AYA">
+                                <rect key="frame" x="71" y="223" width="200" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.975308642" blue="0.975308642" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="burrito.png" id="uyR-vE-w15">
+                                <rect key="frame" x="303" y="223" width="200" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.975308642" blue="0.975308642" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="turkey-sandwhich.png" id="z9B-Ae-dVR">
+                                <rect key="frame" x="537" y="223" width="200" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.975308642" blue="0.975308642" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="empty-plate.png" id="sUF-X0-qgQ">
+                                <rect key="frame" x="70" y="416" width="200" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.975308642" blue="0.975308642" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="Chobani-strawberry.png" id="3Nc-TN-Fsq">
+                                <rect key="frame" x="302" y="416" width="200" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.975308642" blue="0.975308642" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="popcorn1.png" id="87L-3H-bmn">
+                                <rect key="frame" x="536" y="416" width="200" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.975308642" blue="0.975308642" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="Swordfish-Steak-with-Mango-Chutney-on-Curried-Lentils-500.png" id="N7a-yP-1U3">
+                                <rect key="frame" x="69" y="631" width="200" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.975308642" blue="0.975308642" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="chickencordonbleu.png" id="jd9-iM-Ita">
+                                <rect key="frame" x="301" y="631" width="200" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.975308642" blue="0.975308642" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="HamburgerAndFries.png" id="t30-Ct-9BO">
+                                <rect key="frame" x="535" y="631" width="200" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.975308642" blue="0.975308642" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="empty-plate.png" id="F6g-wt-hhS">
+                                <rect key="frame" x="68" y="845" width="200" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.975308642" blue="0.975308642" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="Dairy_Queen_Sundae_Hot_Fudge_-_Medium_1.png" id="ZR6-QU-Mpe">
+                                <rect key="frame" x="300" y="845" width="200" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.975308642" blue="0.975308642" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="red_wine_glass.png" id="c8e-MU-MNh">
+                                <rect key="frame" x="534" y="845" width="200" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.975308642" blue="0.975308642" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" id="0w1-Kx-xdO" userLabel="completionOverlayImageView">
+                                <rect key="frame" x="0.0" y="-10" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="uhM-FH-n8Q" appends="YES" id="orH-xm-0eT"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="2YP-wB-YAB"/>
+                    <connections>
+                        <outlet property="b0iv" destination="oa3-dR-AXt" id="TN3-2W-edu"/>
+                        <outlet property="b1iv" destination="COB-zI-BmS" id="sPp-DA-i4O"/>
+                        <outlet property="b2iv" destination="E1H-xO-yik" id="rCU-Po-Oz2"/>
+                        <outlet property="completionOverlayImage" destination="0w1-Kx-xdO" id="GTW-MD-TKY"/>
+                        <outlet property="d0iv" destination="N7a-yP-1U3" id="nfh-7L-B0j"/>
+                        <outlet property="d1iv" destination="jd9-iM-Ita" id="ZbL-oF-X5l"/>
+                        <outlet property="d2iv" destination="t30-Ct-9BO" id="A3i-Ge-GOf"/>
+                        <outlet property="ds0iv" destination="F6g-wt-hhS" id="fJy-h5-jVz"/>
+                        <outlet property="ds1iv" destination="ZR6-QU-Mpe" id="SvM-10-BFV"/>
+                        <outlet property="ds2iv" destination="c8e-MU-MNh" id="ccN-tC-ryU"/>
+                        <outlet property="l0iv" destination="RQ9-LA-AYA" id="GT5-4Z-9VE"/>
+                        <outlet property="l1iv" destination="uyR-vE-w15" id="VvI-Ns-AcD"/>
+                        <outlet property="l2iv" destination="z9B-Ae-dVR" id="PmN-HS-hrU"/>
+                        <outlet property="s0iv" destination="sUF-X0-qgQ" id="Rj9-2m-CJv"/>
+                        <outlet property="s1iv" destination="3Nc-TN-Fsq" id="ct3-3y-m5O"/>
+                        <outlet property="s2iv" destination="87L-3H-bmn" id="TQn-fA-Fs1"/>
+                        <segue destination="D9x-Lm-Zit" kind="push" identifier="b" id="iQK-bV-qGN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jjk-dN-BKq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="uhM-FH-n8Q">
+                    <connections>
+                        <action selector="tapHappenedWithRecognizer:" destination="btG-J5-tHp" id="Mgo-lM-3bg"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-1218" y="-3803"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zHw-U3-kNx">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" id="D9x-Lm-Zit" customClass="SMViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9bc-Ad-wYr">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background-mountains.png" id="OD3-QK-2hw">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="mentor-talk270x317.png" id="emT-Gz-YcG">
+                                <rect key="frame" x="33" y="449" width="274" height="344"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="aU7-7L-LDT" appends="YES" id="yk0-6m-aPX"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="{           }" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZcA-E4-oiK">
+                                <rect key="frame" x="140" y="121" width="550" height="192"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.72999999999999998" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="143"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="=]" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VaY-Ny-NtM">
+                                <rect key="frame" x="222" y="163" width="368" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TF3-Uw-TG6"/>
+                    <connections>
+                        <outlet property="mentorImageView" destination="emT-Gz-YcG" id="8Oo-af-V4h"/>
+                        <outlet property="mentorSpeechLabel" destination="VaY-Ny-NtM" id="5qA-a4-cWJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E7R-9c-ubb" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="aU7-7L-LDT">
+                    <connections>
+                        <action selector="touchGestureRecognizerRecognized:" destination="D9x-Lm-Zit" id="2c1-GO-5Wt"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-202" y="-3909"/>
         </scene>
     </scenes>
     <resources>
@@ -221,6 +521,7 @@
         <image name="empty-plate.png" width="200" height="124"/>
         <image name="honey-nut-cheerios-cereal-single-serve6-cups-1.png" width="200" height="124"/>
         <image name="mentor-sleep270x317.png" width="270" height="317"/>
+        <image name="mentor-talk270x317.png" width="270" height="317"/>
         <image name="popcorn1.png" width="200" height="124"/>
         <image name="red_wine_glass.png" width="200" height="124"/>
         <image name="taptap150x130.png" width="150" height="130"/>
@@ -256,6 +557,12 @@
                 <relationship kind="outlet" name="mentorImageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="mentorSpeechLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="taptapImageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="SMYogi2Controller" superclassName="SMViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SMYogi2Controller.h"/>
+            <relationships>
+                <relationship kind="action" name="touchGestureRecognizerRecognized:" candidateClass="UITapGestureRecognizer"/>
             </relationships>
         </class>
     </classes>

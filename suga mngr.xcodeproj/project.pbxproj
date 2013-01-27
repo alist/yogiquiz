@@ -59,6 +59,8 @@
 		792E2DA416B4606900493A66 /* taptap150x130.png in Resources */ = {isa = PBXBuildFile; fileRef = 792E2DA316B4606900493A66 /* taptap150x130.png */; };
 		792E2DA616B46BD700493A66 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792E2DA516B46BD700493A66 /* QuartzCore.framework */; };
 		792E2DA916B479E300493A66 /* SMFoodSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792E2DA816B479E300493A66 /* SMFoodSelectViewController.m */; };
+		797E05B316B4D16500EEC115 /* SMYogi2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E05B216B4D16500EEC115 /* SMYogi2Controller.m */; };
+		797E05B616B4D58900EEC115 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797E05B516B4D58900EEC115 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,6 +122,9 @@
 		792E2DA516B46BD700493A66 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		792E2DA716B479E300493A66 /* SMFoodSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFoodSelectViewController.h; sourceTree = "<group>"; };
 		792E2DA816B479E300493A66 /* SMFoodSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMFoodSelectViewController.m; sourceTree = "<group>"; };
+		797E05B116B4D16500EEC115 /* SMYogi2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMYogi2Controller.h; sourceTree = "<group>"; };
+		797E05B216B4D16500EEC115 /* SMYogi2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMYogi2Controller.m; sourceTree = "<group>"; };
+		797E05B516B4D58900EEC115 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				797E05B616B4D58900EEC115 /* AudioToolbox.framework in Frameworks */,
 				792E2DA616B46BD700493A66 /* QuartzCore.framework in Frameworks */,
 				792E2D7216B447B300493A66 /* UIKit.framework in Frameworks */,
 				792E2D7416B447B300493A66 /* Foundation.framework in Frameworks */,
@@ -200,6 +206,7 @@
 		792E2D7016B447B300493A66 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				797E05B516B4D58900EEC115 /* AudioToolbox.framework */,
 				792E2DA516B46BD700493A66 /* QuartzCore.framework */,
 				792E2D7116B447B300493A66 /* UIKit.framework */,
 				792E2D7316B447B300493A66 /* Foundation.framework */,
@@ -218,6 +225,8 @@
 				792E2D8C16B447B300493A66 /* MainStoryboard_iPad.storyboard */,
 				792E2D8F16B447B300493A66 /* SMViewController.h */,
 				792E2D9016B447B300493A66 /* SMViewController.m */,
+				797E05B116B4D16500EEC115 /* SMYogi2Controller.h */,
+				797E05B216B4D16500EEC115 /* SMYogi2Controller.m */,
 				792E2D7816B447B300493A66 /* Supporting Files */,
 				792E2DA716B479E300493A66 /* SMFoodSelectViewController.h */,
 				792E2DA816B479E300493A66 /* SMFoodSelectViewController.m */,
@@ -367,6 +376,7 @@
 				792E2D8216B447B300493A66 /* SMAppDelegate.m in Sources */,
 				792E2D9116B447B300493A66 /* SMViewController.m in Sources */,
 				792E2DA916B479E300493A66 /* SMFoodSelectViewController.m in Sources */,
+				797E05B316B4D16500EEC115 /* SMYogi2Controller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 
 #import "SMViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface SMViewController ()
 
@@ -19,7 +20,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-	
+
+//	SystemSoundID criticalErrorSound = 0;
+//	NSString* sndpath = [[NSBundle mainBundle] pathForResource:@"glass_shatter" ofType:@"wav" inDirectory:@"/"];
+//	CFURLRef baseURL = (__bridge CFURLRef)[[NSURL alloc] initFileURLWithPath:sndpath];
+//	AudioServicesCreateSystemSoundID (baseURL, &criticalErrorSound);
+//
+//	AudioServicesPlaySystemSound (criticalErrorSound);
+
+
 	[UIView animateWithDuration:.5 delay:.1 options:UIViewAnimationOptionAutoreverse|UIViewAnimationOptionAllowUserInteraction|UIViewAnimationOptionRepeat|UIViewAnimationOptionAllowAnimatedContent animations:^{
 		
 		self.taptapImageView.transform = CGAffineTransformMakeRotation(.2);

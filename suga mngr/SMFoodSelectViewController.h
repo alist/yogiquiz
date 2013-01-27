@@ -34,13 +34,17 @@
 
 @property (nonatomic, strong) NSArray* categoryPrefixes;
 
+@property (nonatomic, strong) NSMutableDictionary* selectedViewsByCategory;
+
+
 -(BOOL) isCompleted;
 
--(void) highlightSelectionsByVirtueForCategory:(NSString*)category;
 -(void) resetHighlightsForCategory:(NSString*)category;
 
 -(NSString*) categoryForImageView:(UIView*)selectedView;
 
 - (IBAction)tapHappenedWithRecognizer:(UITapGestureRecognizer *)sender;
+
+-(void) handleCompletion;
 
 @end
