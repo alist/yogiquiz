@@ -46,12 +46,22 @@
 -(NSString*) categoryForImageView:(UIView*)selectedView{
 	for (NSString* category in self.categoryPrefixes){
 		for (int i =0; i<= 2; i++){
-			
+			UIView * selectedView = [self valueForKey:[NSString stringWithFormat:@"%@%iiv",category,i]];
+			if (selectedView)
+				return category;
 		}
 		
 	}
 	
 	return nil;
+}
+
+- (IBAction)tapHappenedWithRecognizer:(UITapGestureRecognizer *)sender {
+	UIView * selectedView = [sender.view hitTest:[sender locationInView:sender.view] withEvent:nil];
+	NSString * category = [self categoryForImageView:selectedView];
+	if (category){
+		[self resetHighlightsForCategory:category];
+	}
 }
 
 

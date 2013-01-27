@@ -41,4 +41,6 @@
 
 -(NSString*) categoryForImageView:(UIView*)selectedView;
 
+- (IBAction)tapHappenedWithRecognizer:(UITapGestureRecognizer *)sender;
+
 @end
