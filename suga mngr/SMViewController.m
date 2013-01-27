@@ -55,7 +55,7 @@
 }
 
 -(void) performStateAnimate{
-	[UIView animateWithDuration:.3 delay:.1 options:UIViewAnimationOptionAllowUserInteraction animations:^{
+	[UIView animateWithDuration:.3 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
 		[self.taptapImageView setAlpha:0];
 	} completion:nil];
 	
@@ -164,7 +164,7 @@
 	
 }
 -(void) setupForUserInputWait{
-	[UIView animateWithDuration:.3 delay:1 options:UIViewAnimationOptionAllowAnimatedContent|UIViewAnimationOptionAllowUserInteraction  animations:^{
+	[UIView animateWithDuration:.3 delay:4 options:UIViewAnimationOptionAllowAnimatedContent|UIViewAnimationOptionAllowUserInteraction  animations:^{
 		[self.taptapImageView setAlpha:1];
 	} completion:nil];
 

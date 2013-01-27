@@ -19,6 +19,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+		self.categoryPrefixes = @[@"b",@"l",@"s",@"d",@"ds"];
     }
     return self;
 }
@@ -29,10 +30,29 @@
 	// Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void) highlightSelectionsByVirtueForCategory:(NSString*)category{
+	
+}
+
+-(void) resetHighlightsForCategory:(NSString*)category{
+	
+}
+
+-(NSString*) categoryForImageView:(UIView*)selectedView{
+	for (NSString* category in self.categoryPrefixes){
+		for (int i =0; i<= 2; i++){
+			
+		}
+		
+	}
+	
+	return nil;
+}
+
 
 @end

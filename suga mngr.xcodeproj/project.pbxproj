@@ -7,6 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7905ABF116B4B5B00003EE42 /* background-quiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905ABEE16B4B5B00003EE42 /* background-quiz.png */; };
+		7905ABF216B4B5B00003EE42 /* completion-overlay-success768x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905ABEF16B4B5B00003EE42 /* completion-overlay-success768x1024.png */; };
+		7905ABF316B4B5B00003EE42 /* completion-overlay-fail768x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905ABF016B4B5B00003EE42 /* completion-overlay-fail768x1024.png */; };
+		7905AC0816B4B8A10003EE42 /* Narrative-Opening.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC0516B4B8A10003EE42 /* Narrative-Opening.wav */; };
+		7905AC0916B4B8A10003EE42 /* Narrative-Jibberish-goodpoint.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC0616B4B8A10003EE42 /* Narrative-Jibberish-goodpoint.wav */; };
+		7905AC0A16B4B8A10003EE42 /* Narrative-Jibberish.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC0716B4B8A10003EE42 /* Narrative-Jibberish.wav */; };
+		7905AC0D16B4B8B00003EE42 /* glass_shatter.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC0B16B4B8B00003EE42 /* glass_shatter.wav */; };
+		7905AC0E16B4B8B00003EE42 /* cha_ching.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC0C16B4B8B00003EE42 /* cha_ching.wav */; };
+		7905AC2716B4BC850003EE42 /* 300px-CaesarSalad3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC1016B4BC850003EE42 /* 300px-CaesarSalad3.png */; };
+		7905AC2816B4BC850003EE42 /* 33624Pizza-Slice2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC1116B4BC850003EE42 /* 33624Pizza-Slice2.png */; };
+		7905AC2916B4BC850003EE42 /* A1ChickenBroccoliStirFry_305.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC1216B4BC850003EE42 /* A1ChickenBroccoliStirFry_305.png */; };
+		7905AC2A16B4BC850003EE42 /* burrito.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC1316B4BC850003EE42 /* burrito.png */; };
+		7905AC2B16B4BC850003EE42 /* chicagodinerpie_350x250.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC1416B4BC850003EE42 /* chicagodinerpie_350x250.png */; };
+		7905AC2C16B4BC850003EE42 /* chickencordonbleu.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC1516B4BC850003EE42 /* chickencordonbleu.png */; };
+		7905AC2D16B4BC850003EE42 /* Chobani-strawberry.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC1616B4BC850003EE42 /* Chobani-strawberry.png */; };
+		7905AC2E16B4BC850003EE42 /* Country_Fried_Steak_Eggs.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC1716B4BC850003EE42 /* Country_Fried_Steak_Eggs.png */; };
+		7905AC2F16B4BC850003EE42 /* Dairy_Queen_Sundae_Hot_Fudge_-_Medium_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC1816B4BC850003EE42 /* Dairy_Queen_Sundae_Hot_Fudge_-_Medium_1.png */; };
+		7905AC3016B4BC850003EE42 /* Egg_Sandwiches.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC1916B4BC850003EE42 /* Egg_Sandwiches.png */; };
+		7905AC3116B4BC850003EE42 /* empty-plate.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC1A16B4BC850003EE42 /* empty-plate.png */; };
+		7905AC3216B4BC850003EE42 /* Fruit-Cup.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC1B16B4BC850003EE42 /* Fruit-Cup.png */; };
+		7905AC3316B4BC850003EE42 /* HamburgerAndFries.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC1C16B4BC850003EE42 /* HamburgerAndFries.png */; };
+		7905AC3416B4BC850003EE42 /* honey-nut-cheerios-cereal-single-serve6-cups-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC1D16B4BC850003EE42 /* honey-nut-cheerios-cereal-single-serve6-cups-1.png */; };
+		7905AC3516B4BC850003EE42 /* KelloggsNutriGrainCerealBarsAppleCinnamon_336.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC1E16B4BC850003EE42 /* KelloggsNutriGrainCerealBarsAppleCinnamon_336.png */; };
+		7905AC3616B4BC850003EE42 /* pix-prime-rib-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC1F16B4BC850003EE42 /* pix-prime-rib-1.png */; };
+		7905AC3716B4BC850003EE42 /* popcorn1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC2016B4BC850003EE42 /* popcorn1.png */; };
+		7905AC3816B4BC850003EE42 /* red_wine_glass.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC2116B4BC850003EE42 /* red_wine_glass.png */; };
+		7905AC3916B4BC850003EE42 /* slim-fast-recalljpg-b2ad86c88122a473_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC2216B4BC850003EE42 /* slim-fast-recalljpg-b2ad86c88122a473_large.png */; };
+		7905AC3A16B4BC850003EE42 /* Spicy-Roasted-Red-Pepper-&-Hummus-Sandwich-with-Portabella1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC2316B4BC850003EE42 /* Spicy-Roasted-Red-Pepper-&-Hummus-Sandwich-with-Portabella1.png */; };
+		7905AC3B16B4BC850003EE42 /* Swordfish-Steak-with-Mango-Chutney-on-Curried-Lentils-500.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC2416B4BC850003EE42 /* Swordfish-Steak-with-Mango-Chutney-on-Curried-Lentils-500.png */; };
+		7905AC3C16B4BC850003EE42 /* tmb_Chicken-Noodle-Soup-&-Salad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC2516B4BC850003EE42 /* tmb_Chicken-Noodle-Soup-&-Salad.png */; };
+		7905AC3D16B4BC850003EE42 /* turkey-sandwhich.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC2616B4BC850003EE42 /* turkey-sandwhich.png */; };
+		7905AC3F16B4C0190003EE42 /* Open_Door_Gastropub_steak_n_eggs.png in Resources */ = {isa = PBXBuildFile; fileRef = 7905AC3E16B4C0180003EE42 /* Open_Door_Gastropub_steak_n_eggs.png */; };
 		792E2D7216B447B300493A66 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792E2D7116B447B300493A66 /* UIKit.framework */; };
 		792E2D7416B447B300493A66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792E2D7316B447B300493A66 /* Foundation.framework */; };
 		792E2D7616B447B300493A66 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792E2D7516B447B300493A66 /* CoreGraphics.framework */; };
@@ -30,6 +62,38 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7905ABEE16B4B5B00003EE42 /* background-quiz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-quiz.png"; sourceTree = "<group>"; };
+		7905ABEF16B4B5B00003EE42 /* completion-overlay-success768x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "completion-overlay-success768x1024.png"; sourceTree = "<group>"; };
+		7905ABF016B4B5B00003EE42 /* completion-overlay-fail768x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "completion-overlay-fail768x1024.png"; sourceTree = "<group>"; };
+		7905AC0516B4B8A10003EE42 /* Narrative-Opening.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Narrative-Opening.wav"; sourceTree = "<group>"; };
+		7905AC0616B4B8A10003EE42 /* Narrative-Jibberish-goodpoint.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Narrative-Jibberish-goodpoint.wav"; sourceTree = "<group>"; };
+		7905AC0716B4B8A10003EE42 /* Narrative-Jibberish.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Narrative-Jibberish.wav"; sourceTree = "<group>"; };
+		7905AC0B16B4B8B00003EE42 /* glass_shatter.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = glass_shatter.wav; sourceTree = "<group>"; };
+		7905AC0C16B4B8B00003EE42 /* cha_ching.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cha_ching.wav; sourceTree = "<group>"; };
+		7905AC1016B4BC850003EE42 /* 300px-CaesarSalad3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "300px-CaesarSalad3.png"; sourceTree = "<group>"; };
+		7905AC1116B4BC850003EE42 /* 33624Pizza-Slice2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "33624Pizza-Slice2.png"; sourceTree = "<group>"; };
+		7905AC1216B4BC850003EE42 /* A1ChickenBroccoliStirFry_305.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A1ChickenBroccoliStirFry_305.png; sourceTree = "<group>"; };
+		7905AC1316B4BC850003EE42 /* burrito.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burrito.png; sourceTree = "<group>"; };
+		7905AC1416B4BC850003EE42 /* chicagodinerpie_350x250.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chicagodinerpie_350x250.png; sourceTree = "<group>"; };
+		7905AC1516B4BC850003EE42 /* chickencordonbleu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chickencordonbleu.png; sourceTree = "<group>"; };
+		7905AC1616B4BC850003EE42 /* Chobani-strawberry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chobani-strawberry.png"; sourceTree = "<group>"; };
+		7905AC1716B4BC850003EE42 /* Country_Fried_Steak_Eggs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Country_Fried_Steak_Eggs.png; sourceTree = "<group>"; };
+		7905AC1816B4BC850003EE42 /* Dairy_Queen_Sundae_Hot_Fudge_-_Medium_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dairy_Queen_Sundae_Hot_Fudge_-_Medium_1.png"; sourceTree = "<group>"; };
+		7905AC1916B4BC850003EE42 /* Egg_Sandwiches.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Egg_Sandwiches.png; sourceTree = "<group>"; };
+		7905AC1A16B4BC850003EE42 /* empty-plate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "empty-plate.png"; sourceTree = "<group>"; };
+		7905AC1B16B4BC850003EE42 /* Fruit-Cup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fruit-Cup.png"; sourceTree = "<group>"; };
+		7905AC1C16B4BC850003EE42 /* HamburgerAndFries.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HamburgerAndFries.png; sourceTree = "<group>"; };
+		7905AC1D16B4BC850003EE42 /* honey-nut-cheerios-cereal-single-serve6-cups-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "honey-nut-cheerios-cereal-single-serve6-cups-1.png"; sourceTree = "<group>"; };
+		7905AC1E16B4BC850003EE42 /* KelloggsNutriGrainCerealBarsAppleCinnamon_336.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KelloggsNutriGrainCerealBarsAppleCinnamon_336.png; sourceTree = "<group>"; };
+		7905AC1F16B4BC850003EE42 /* pix-prime-rib-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pix-prime-rib-1.png"; sourceTree = "<group>"; };
+		7905AC2016B4BC850003EE42 /* popcorn1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popcorn1.png; sourceTree = "<group>"; };
+		7905AC2116B4BC850003EE42 /* red_wine_glass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_wine_glass.png; sourceTree = "<group>"; };
+		7905AC2216B4BC850003EE42 /* slim-fast-recalljpg-b2ad86c88122a473_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slim-fast-recalljpg-b2ad86c88122a473_large.png"; sourceTree = "<group>"; };
+		7905AC2316B4BC850003EE42 /* Spicy-Roasted-Red-Pepper-&-Hummus-Sandwich-with-Portabella1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spicy-Roasted-Red-Pepper-&-Hummus-Sandwich-with-Portabella1.png"; sourceTree = "<group>"; };
+		7905AC2416B4BC850003EE42 /* Swordfish-Steak-with-Mango-Chutney-on-Curried-Lentils-500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Swordfish-Steak-with-Mango-Chutney-on-Curried-Lentils-500.png"; sourceTree = "<group>"; };
+		7905AC2516B4BC850003EE42 /* tmb_Chicken-Noodle-Soup-&-Salad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tmb_Chicken-Noodle-Soup-&-Salad.png"; sourceTree = "<group>"; };
+		7905AC2616B4BC850003EE42 /* turkey-sandwhich.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "turkey-sandwhich.png"; sourceTree = "<group>"; };
+		7905AC3E16B4C0180003EE42 /* Open_Door_Gastropub_steak_n_eggs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Open_Door_Gastropub_steak_n_eggs.png; sourceTree = "<group>"; };
 		792E2D6D16B447B300493A66 /* suga mngr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "suga mngr.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		792E2D7116B447B300493A66 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		792E2D7316B447B300493A66 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -73,6 +137,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7905AC0416B4B85D0003EE42 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				7905AC0B16B4B8B00003EE42 /* glass_shatter.wav */,
+				7905AC0C16B4B8B00003EE42 /* cha_ching.wav */,
+				7905AC0516B4B8A10003EE42 /* Narrative-Opening.wav */,
+				7905AC0616B4B8A10003EE42 /* Narrative-Jibberish-goodpoint.wav */,
+				7905AC0716B4B8A10003EE42 /* Narrative-Jibberish.wav */,
+			);
+			name = sounds;
+			sourceTree = "<group>";
+		};
+		7905AC0F16B4BC850003EE42 /* quiz1 */ = {
+			isa = PBXGroup;
+			children = (
+				7905AC3E16B4C0180003EE42 /* Open_Door_Gastropub_steak_n_eggs.png */,
+				7905AC1016B4BC850003EE42 /* 300px-CaesarSalad3.png */,
+				7905AC1116B4BC850003EE42 /* 33624Pizza-Slice2.png */,
+				7905AC1216B4BC850003EE42 /* A1ChickenBroccoliStirFry_305.png */,
+				7905AC1316B4BC850003EE42 /* burrito.png */,
+				7905AC1416B4BC850003EE42 /* chicagodinerpie_350x250.png */,
+				7905AC1516B4BC850003EE42 /* chickencordonbleu.png */,
+				7905AC1616B4BC850003EE42 /* Chobani-strawberry.png */,
+				7905AC1716B4BC850003EE42 /* Country_Fried_Steak_Eggs.png */,
+				7905AC1816B4BC850003EE42 /* Dairy_Queen_Sundae_Hot_Fudge_-_Medium_1.png */,
+				7905AC1916B4BC850003EE42 /* Egg_Sandwiches.png */,
+				7905AC1A16B4BC850003EE42 /* empty-plate.png */,
+				7905AC1B16B4BC850003EE42 /* Fruit-Cup.png */,
+				7905AC1C16B4BC850003EE42 /* HamburgerAndFries.png */,
+				7905AC1D16B4BC850003EE42 /* honey-nut-cheerios-cereal-single-serve6-cups-1.png */,
+				7905AC1E16B4BC850003EE42 /* KelloggsNutriGrainCerealBarsAppleCinnamon_336.png */,
+				7905AC1F16B4BC850003EE42 /* pix-prime-rib-1.png */,
+				7905AC2016B4BC850003EE42 /* popcorn1.png */,
+				7905AC2116B4BC850003EE42 /* red_wine_glass.png */,
+				7905AC2216B4BC850003EE42 /* slim-fast-recalljpg-b2ad86c88122a473_large.png */,
+				7905AC2316B4BC850003EE42 /* Spicy-Roasted-Red-Pepper-&-Hummus-Sandwich-with-Portabella1.png */,
+				7905AC2416B4BC850003EE42 /* Swordfish-Steak-with-Mango-Chutney-on-Curried-Lentils-500.png */,
+				7905AC2516B4BC850003EE42 /* tmb_Chicken-Noodle-Soup-&-Salad.png */,
+				7905AC2616B4BC850003EE42 /* turkey-sandwhich.png */,
+			);
+			path = quiz1;
+			sourceTree = "<group>";
+		};
 		792E2D6216B447B300493A66 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +242,11 @@
 		792E2D9816B454FB00493A66 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				7905AC0F16B4BC850003EE42 /* quiz1 */,
+				7905AC0416B4B85D0003EE42 /* sounds */,
+				7905ABEE16B4B5B00003EE42 /* background-quiz.png */,
+				7905ABEF16B4B5B00003EE42 /* completion-overlay-success768x1024.png */,
+				7905ABF016B4B5B00003EE42 /* completion-overlay-fail768x1024.png */,
 				792E2DA316B4606900493A66 /* taptap150x130.png */,
 				792E2D9F16B45DE200493A66 /* mentor-idle270x317.png */,
 				792E2DA016B45DE200493A66 /* mentor-sleep270x317.png */,
@@ -209,6 +321,38 @@
 				792E2DA116B45DE200493A66 /* mentor-idle270x317.png in Resources */,
 				792E2DA216B45DE200493A66 /* mentor-sleep270x317.png in Resources */,
 				792E2DA416B4606900493A66 /* taptap150x130.png in Resources */,
+				7905ABF116B4B5B00003EE42 /* background-quiz.png in Resources */,
+				7905ABF216B4B5B00003EE42 /* completion-overlay-success768x1024.png in Resources */,
+				7905ABF316B4B5B00003EE42 /* completion-overlay-fail768x1024.png in Resources */,
+				7905AC0816B4B8A10003EE42 /* Narrative-Opening.wav in Resources */,
+				7905AC0916B4B8A10003EE42 /* Narrative-Jibberish-goodpoint.wav in Resources */,
+				7905AC0A16B4B8A10003EE42 /* Narrative-Jibberish.wav in Resources */,
+				7905AC0D16B4B8B00003EE42 /* glass_shatter.wav in Resources */,
+				7905AC0E16B4B8B00003EE42 /* cha_ching.wav in Resources */,
+				7905AC2716B4BC850003EE42 /* 300px-CaesarSalad3.png in Resources */,
+				7905AC2816B4BC850003EE42 /* 33624Pizza-Slice2.png in Resources */,
+				7905AC2916B4BC850003EE42 /* A1ChickenBroccoliStirFry_305.png in Resources */,
+				7905AC2A16B4BC850003EE42 /* burrito.png in Resources */,
+				7905AC2B16B4BC850003EE42 /* chicagodinerpie_350x250.png in Resources */,
+				7905AC2C16B4BC850003EE42 /* chickencordonbleu.png in Resources */,
+				7905AC2D16B4BC850003EE42 /* Chobani-strawberry.png in Resources */,
+				7905AC2E16B4BC850003EE42 /* Country_Fried_Steak_Eggs.png in Resources */,
+				7905AC2F16B4BC850003EE42 /* Dairy_Queen_Sundae_Hot_Fudge_-_Medium_1.png in Resources */,
+				7905AC3016B4BC850003EE42 /* Egg_Sandwiches.png in Resources */,
+				7905AC3116B4BC850003EE42 /* empty-plate.png in Resources */,
+				7905AC3216B4BC850003EE42 /* Fruit-Cup.png in Resources */,
+				7905AC3316B4BC850003EE42 /* HamburgerAndFries.png in Resources */,
+				7905AC3416B4BC850003EE42 /* honey-nut-cheerios-cereal-single-serve6-cups-1.png in Resources */,
+				7905AC3516B4BC850003EE42 /* KelloggsNutriGrainCerealBarsAppleCinnamon_336.png in Resources */,
+				7905AC3616B4BC850003EE42 /* pix-prime-rib-1.png in Resources */,
+				7905AC3716B4BC850003EE42 /* popcorn1.png in Resources */,
+				7905AC3816B4BC850003EE42 /* red_wine_glass.png in Resources */,
+				7905AC3916B4BC850003EE42 /* slim-fast-recalljpg-b2ad86c88122a473_large.png in Resources */,
+				7905AC3A16B4BC850003EE42 /* Spicy-Roasted-Red-Pepper-&-Hummus-Sandwich-with-Portabella1.png in Resources */,
+				7905AC3B16B4BC850003EE42 /* Swordfish-Steak-with-Mango-Chutney-on-Curried-Lentils-500.png in Resources */,
+				7905AC3C16B4BC850003EE42 /* tmb_Chicken-Noodle-Soup-&-Salad.png in Resources */,
+				7905AC3D16B4BC850003EE42 /* turkey-sandwhich.png in Resources */,
+				7905AC3F16B4C0190003EE42 /* Open_Door_Gastropub_steak_n_eggs.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +493,7 @@
 				792E2D9616B447B300493A66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
