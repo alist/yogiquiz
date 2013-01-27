@@ -196,7 +196,7 @@
 		[self resetHighlightsForCategory:category];
 		
 		[self.selectedViewsByCategory setValue:iv forKey:category];
-		[iv.layer setBorderWidth:4];
+		[iv.layer setBorderWidth:8];
 		
 		if ([self isCompleted]){
 			[self handleCompletion];

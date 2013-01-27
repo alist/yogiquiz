@@ -175,7 +175,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ZZzzzzz...." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gbR-TV-fk3">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ZZzzzzz...." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gbR-TV-fk3" customClass="SMFillingLabel">
                                 <rect key="frame" x="222" y="163" width="368" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
@@ -234,7 +234,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ZZzzzzz...." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B8m-dg-Ls3">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ZZzzzzz...." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B8m-dg-Ls3" customClass="SMFillingLabel">
                                 <rect key="frame" x="222" y="163" width="368" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
@@ -359,6 +359,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.975308642" blue="0.975308642" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" id="0w1-Kx-xdO" userLabel="completionOverlayImageView">
+                                <rect key="frame" x="-5" y="-3" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -387,10 +391,6 @@
                         <segue destination="D9x-Lm-Zit" kind="push" identifier="b" id="iQK-bV-qGN"/>
                     </connections>
                 </viewController>
-                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" id="0w1-Kx-xdO" userLabel="completionOverlayImageView">
-                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
             </objects>
             <point key="canvasLocation" x="-1218" y="-3803"/>
         </scene>
@@ -472,6 +472,9 @@
         <image name="turkey-sandwhich.png" width="200" height="124"/>
     </resources>
     <classes>
+        <class className="SMFillingLabel" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SMFillingLabel.h"/>
+        </class>
         <class className="SMFoodSelect2ViewController" superclassName="SMFoodSelectViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SMFoodSelect2ViewController.h"/>
         </class>
@@ -508,9 +511,6 @@
         </class>
         <class className="SMYogi2Controller" superclassName="SMViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SMYogi2Controller.h"/>
-            <relationships>
-                <relationship kind="action" name="touchGestureRecognizerRecognized:" candidateClass="UITapGestureRecognizer"/>
-            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

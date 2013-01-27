@@ -64,6 +64,7 @@
 		797E05B816B5121C00EEC115 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797E05B716B5121C00EEC115 /* AVFoundation.framework */; };
 		797E05BA16B51AA900EEC115 /* pmph1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 797E05B916B51AA900EEC115 /* pmph1.wav */; };
 		797E05BD16B51E0C00EEC115 /* SMFoodSelect2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E05BC16B51E0C00EEC115 /* SMFoodSelect2ViewController.m */; };
+		797E05C016B520FE00EEC115 /* SMFillingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E05BF16B520FE00EEC115 /* SMFillingLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -132,6 +133,8 @@
 		797E05B916B51AA900EEC115 /* pmph1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pmph1.wav; sourceTree = "<group>"; };
 		797E05BB16B51E0C00EEC115 /* SMFoodSelect2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFoodSelect2ViewController.h; sourceTree = "<group>"; };
 		797E05BC16B51E0C00EEC115 /* SMFoodSelect2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMFoodSelect2ViewController.m; sourceTree = "<group>"; };
+		797E05BE16B520FE00EEC115 /* SMFillingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFillingLabel.h; sourceTree = "<group>"; };
+		797E05BF16B520FE00EEC115 /* SMFillingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMFillingLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +236,8 @@
 				792E2D8116B447B300493A66 /* SMAppDelegate.m */,
 				792E2D8916B447B300493A66 /* MainStoryboard_iPhone.storyboard */,
 				792E2D8C16B447B300493A66 /* MainStoryboard_iPad.storyboard */,
+				797E05BE16B520FE00EEC115 /* SMFillingLabel.h */,
+				797E05BF16B520FE00EEC115 /* SMFillingLabel.m */,
 				792E2D8F16B447B300493A66 /* SMViewController.h */,
 				792E2D9016B447B300493A66 /* SMViewController.m */,
 				797E05B116B4D16500EEC115 /* SMYogi2Controller.h */,
@@ -391,6 +396,7 @@
 				792E2DA916B479E300493A66 /* SMFoodSelectViewController.m in Sources */,
 				797E05B316B4D16500EEC115 /* SMYogi2Controller.m in Sources */,
 				797E05BD16B51E0C00EEC115 /* SMFoodSelect2ViewController.m in Sources */,
+				797E05C016B520FE00EEC115 /* SMFillingLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -39,7 +39,7 @@
 
 		assert(key.length == 4); //otherwise this will fail, it's a hack
 		[self.selectedViewsByCategory setValue:retreivedView forKey:[key substringToIndex:1]];
-		[retreivedView.layer setBorderWidth:4];
+		[retreivedView.layer setBorderWidth:8];
 
 	}
 }
