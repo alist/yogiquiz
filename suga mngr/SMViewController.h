@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
 
 typedef enum {
 	introStateSleeping = 0,
@@ -22,12 +24,20 @@ typedef enum {
 	introStateReady
 }introState;
 
-@interface SMViewController : UIViewController
+@interface SMViewController : UIViewController{
+	SystemSoundID speakSound;
+	SystemSoundID yawnSound;
+}
 @property (nonatomic, assign) introState gameState;
 
 @property (strong, nonatomic) IBOutlet UIImageView *mentorImageView;
 @property (strong, nonatomic) IBOutlet UIImageView *taptapImageView;
 @property (strong, nonatomic) IBOutlet UILabel *mentorSpeechLabel;
+
+
+@property (nonatomic, strong)AVAudioPlayer * narrativeAudio;
+
+
 - (IBAction)touchGestureRecognizerRecognized:(id)sender;
 -(void)performStateAnimate;
 

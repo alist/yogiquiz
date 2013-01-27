@@ -67,6 +67,8 @@
 	
 	
 	if (self.gameState == introStateWaking){
+		AudioServicesPlaySystemSound (yawnSound);
+
 		[UIView animateWithDuration:.3 delay:.1 options:UIViewAnimationOptionAllowAnimatedContent|UIViewAnimationOptionAllowUserInteraction animations:^{
 			self.mentorImageView.transform = CGAffineTransformMakeRotation(.32);
 		} completion:^(BOOL finished) {
@@ -75,7 +77,7 @@
 				self.mentorImageView.transform = CGAffineTransformMakeRotation(0);
 				self.mentorImageView.image = [UIImage imageNamed:@"mentor-idle270x317.png"];
 			} completion:^(BOOL finished) {
-				[self.mentorSpeechLabel setText:@"*Yawn!* Oh hi, NICE JOB!"];
+				[self.mentorSpeechLabel setText:@"*Yawn!* \nOh hi, NICE JOB!"];
 				[self advanceGameState];
 			}];
 			
@@ -83,13 +85,15 @@
 	}
 
 	if (self.gameState == yogi2StateSayingNextRoundRules){
+		AudioServicesPlaySystemSound (speakSound);
+
 		self.mentorImageView.image = [UIImage imageNamed:@"mentor-talk270x317.png"];
 		[UIView animateWithDuration:3 delay:.1 options:UIViewAnimationOptionAllowAnimatedContent|UIViewAnimationOptionAllowUserInteraction animations:^{
 			
 			self.mentorImageView.transform = CGAffineTransformMakeRotation(.3);
 			
 			
-			[self.mentorSpeechLabel setText:@"Tonight you're going to pizza with a friend for lunch, and the movies later in the night!\n Ready?"];
+			[self.mentorSpeechLabel setText:@"Tonight you're going to pizza with a friend for lunch, and the movies later in the night!\n It will be hard. Are you ready?"];
 		} completion:^(BOOL finished) {
 			
 			[UIView animateWithDuration:.3 delay:.1 options:UIViewAnimationOptionAllowAnimatedContent|UIViewAnimationOptionAllowUserInteraction|UIViewAnimationOptionBeginFromCurrentState animations:^{
@@ -105,6 +109,8 @@
 	
 
 	if (self.gameState == yogi2StateReady){
+		AudioServicesPlaySystemSound (yawnSound);
+
 		self.mentorImageView.image = [UIImage imageNamed:@"mentor-talk270x317.png"];
 		[UIView animateWithDuration:3 delay:.1 options:UIViewAnimationOptionAllowAnimatedContent|UIViewAnimationOptionAllowUserInteraction animations:^{
 			
@@ -119,7 +125,7 @@
 				
 				self.mentorImageView.transform = CGAffineTransformMakeRotation(0);
 			} completion:^(BOOL finished) {
-				[self advanceGameState];
+				[self performSegueWithIdentifier:@"a" sender: self];
 			}];
 			
 		}];

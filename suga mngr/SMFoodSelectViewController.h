@@ -7,8 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface SMFoodSelectViewController : UIViewController
+@interface SMFoodSelectViewController : UIViewController{
+	SystemSoundID selectSound;
+	SystemSoundID successSound;
+	SystemSoundID failSound;
+}
+
+@property (nonatomic, strong)AVAudioPlayer * narrativeAudio;
+
+
 @property (strong, nonatomic) IBOutlet UIImageView *b0iv;
 @property (strong, nonatomic) IBOutlet UIImageView *b1iv;
 @property (strong, nonatomic) IBOutlet UIImageView *b2iv;

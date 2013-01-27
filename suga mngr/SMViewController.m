@@ -8,27 +8,34 @@
 
 #import "SMViewController.h"
 #import <QuartzCore/QuartzCore.h>
-#import <AudioToolbox/AudioToolbox.h>
 
 @interface SMViewController ()
 
 @end
 
 @implementation SMViewController
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 
-//	SystemSoundID criticalErrorSound = 0;
-//	NSString* sndpath = [[NSBundle mainBundle] pathForResource:@"glass_shatter" ofType:@"wav" inDirectory:@"/"];
-//	CFURLRef baseURL = (__bridge CFURLRef)[[NSURL alloc] initFileURLWithPath:sndpath];
-//	AudioServicesCreateSystemSoundID (baseURL, &criticalErrorSound);
+	self.narrativeAudio = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Narrative-Opening" ofType:@"wav" inDirectory:@"/"]] error:nil];
+	self.narrativeAudio.volume = .3;
+	self.narrativeAudio.numberOfLoops = -1;
+	int64_t delayInSeconds = 2.0;
+	dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+	dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+		[self.narrativeAudio play];
+	});
+	
+	CFURLRef baseURL = (__bridge CFURLRef)[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Narrative-Jibberish-goodpoint" ofType:@"wav" inDirectory:@"/"]];
+	AudioServicesCreateSystemSoundID (baseURL, &yawnSound);
+	
+
+	baseURL = (__bridge CFURLRef)[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Narrative-Jibberish" ofType:@"wav" inDirectory:@"/"]];
+	AudioServicesCreateSystemSoundID (baseURL, &speakSound);
 //
-//	AudioServicesPlaySystemSound (criticalErrorSound);
-
-
+	
 	[UIView animateWithDuration:.5 delay:.1 options:UIViewAnimationOptionAutoreverse|UIViewAnimationOptionAllowUserInteraction|UIViewAnimationOptionRepeat|UIViewAnimationOptionAllowAnimatedContent animations:^{
 		
 		self.taptapImageView.transform = CGAffineTransformMakeRotation(.2);
@@ -71,6 +78,11 @@
 	
 	NSLog(@"%i",self.gameState);
 	if (self.gameState == introStateWaking){
+		
+		
+		
+		AudioServicesPlaySystemSound (yawnSound);
+
 		[UIView animateWithDuration:.3 delay:.1 options:UIViewAnimationOptionAllowAnimatedContent|UIViewAnimationOptionAllowUserInteraction animations:^{
 			self.mentorImageView.transform = CGAffineTransformMakeRotation(.32);
 		} completion:^(BOOL finished) {
@@ -88,6 +100,8 @@
 	
 	
 	if (self.gameState == introStateSayingHello){
+		AudioServicesPlaySystemSound (speakSound);
+
 		self.mentorImageView.image = [UIImage imageNamed:@"mentor-talk270x317.png"];
 		[UIView animateWithDuration:2 delay:.1 options:UIViewAnimationOptionAllowAnimatedContent|UIViewAnimationOptionAllowUserInteraction animations:^{
 
@@ -110,6 +124,8 @@
 
 	
 	if (self.gameState == introStateSayingGamePurpose){
+		AudioServicesPlaySystemSound (speakSound);
+		
 		self.mentorImageView.image = [UIImage imageNamed:@"mentor-talk270x317.png"];
 		[UIView animateWithDuration:3 delay:.1 options:UIViewAnimationOptionAllowAnimatedContent|UIViewAnimationOptionAllowUserInteraction animations:^{
 			
@@ -132,6 +148,8 @@
 
 	
 	if (self.gameState == introStateSayingGameInstructions){
+		AudioServicesPlaySystemSound (speakSound);
+		
 		self.mentorImageView.image = [UIImage imageNamed:@"mentor-talk270x317.png"];
 		[UIView animateWithDuration:3 delay:.1 options:UIViewAnimationOptionAllowAnimatedContent|UIViewAnimationOptionAllowUserInteraction animations:^{
 			
@@ -153,8 +171,10 @@
 	}
 	
 	if (self.gameState == introStateReady){
+		AudioServicesPlaySystemSound (yawnSound);
+		
 		self.mentorImageView.image = [UIImage imageNamed:@"mentor-talk270x317.png"];
-		[UIView animateWithDuration:3 delay:.1 options:UIViewAnimationOptionAllowAnimatedContent|UIViewAnimationOptionAllowUserInteraction animations:^{
+		[UIView animateWithDuration:2 delay:.1 options:UIViewAnimationOptionAllowAnimatedContent|UIViewAnimationOptionAllowUserInteraction animations:^{
 			
 			self.mentorImageView.transform = CGAffineTransformMakeRotation(.1);
 			
@@ -164,11 +184,6 @@
 			
 			[self performSegueWithIdentifier:@"a" sender: self];
 		}];
-	}
-
-
-	if (self.gameState == introStateReadyAsk){
-		[self performSegueWithIdentifier:@"a" sender: self];
 	}
 	
 }
@@ -199,6 +214,30 @@
 			//nothin
 			break;
 	}
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+	[super viewWillDisappear:animated];
+	[self doVolumeFade];
+}
+
+-(void)doVolumeFade{
+    if (self.narrativeAudio.volume > 0.1) {
+        self.narrativeAudio.volume = self.narrativeAudio.volume - 0.04;
+        [self performSelector:@selector(doVolumeFade) withObject:nil afterDelay:0.1];
+	} else {
+        // Stop and get the sound ready for playing again
+        [self.narrativeAudio stop];
+        self.narrativeAudio.currentTime = 0;
+        self.narrativeAudio.volume = .3;
+    }
+}
+
+-(void)dealloc{
+	AudioServicesDisposeSystemSoundID(yawnSound);
+	yawnSound = 0;
+	AudioServicesDisposeSystemSoundID(speakSound);
+	speakSound = 0;
 }
 
 @end

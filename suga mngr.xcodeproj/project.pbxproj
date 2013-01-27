@@ -61,6 +61,9 @@
 		792E2DA916B479E300493A66 /* SMFoodSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792E2DA816B479E300493A66 /* SMFoodSelectViewController.m */; };
 		797E05B316B4D16500EEC115 /* SMYogi2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E05B216B4D16500EEC115 /* SMYogi2Controller.m */; };
 		797E05B616B4D58900EEC115 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797E05B516B4D58900EEC115 /* AudioToolbox.framework */; };
+		797E05B816B5121C00EEC115 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797E05B716B5121C00EEC115 /* AVFoundation.framework */; };
+		797E05BA16B51AA900EEC115 /* pmph1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 797E05B916B51AA900EEC115 /* pmph1.wav */; };
+		797E05BD16B51E0C00EEC115 /* SMFoodSelect2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E05BC16B51E0C00EEC115 /* SMFoodSelect2ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,6 +128,10 @@
 		797E05B116B4D16500EEC115 /* SMYogi2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMYogi2Controller.h; sourceTree = "<group>"; };
 		797E05B216B4D16500EEC115 /* SMYogi2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMYogi2Controller.m; sourceTree = "<group>"; };
 		797E05B516B4D58900EEC115 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		797E05B716B5121C00EEC115 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		797E05B916B51AA900EEC115 /* pmph1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pmph1.wav; sourceTree = "<group>"; };
+		797E05BB16B51E0C00EEC115 /* SMFoodSelect2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFoodSelect2ViewController.h; sourceTree = "<group>"; };
+		797E05BC16B51E0C00EEC115 /* SMFoodSelect2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMFoodSelect2ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +144,7 @@
 				792E2D7216B447B300493A66 /* UIKit.framework in Frameworks */,
 				792E2D7416B447B300493A66 /* Foundation.framework in Frameworks */,
 				792E2D7616B447B300493A66 /* CoreGraphics.framework in Frameworks */,
+				797E05B816B5121C00EEC115 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +154,7 @@
 		7905AC0416B4B85D0003EE42 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
+				797E05B916B51AA900EEC115 /* pmph1.wav */,
 				7905AC0B16B4B8B00003EE42 /* glass_shatter.wav */,
 				7905AC0C16B4B8B00003EE42 /* cha_ching.wav */,
 				7905AC0516B4B8A10003EE42 /* Narrative-Opening.wav */,
@@ -206,6 +215,7 @@
 		792E2D7016B447B300493A66 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				797E05B716B5121C00EEC115 /* AVFoundation.framework */,
 				797E05B516B4D58900EEC115 /* AudioToolbox.framework */,
 				792E2DA516B46BD700493A66 /* QuartzCore.framework */,
 				792E2D7116B447B300493A66 /* UIKit.framework */,
@@ -228,6 +238,8 @@
 				797E05B116B4D16500EEC115 /* SMYogi2Controller.h */,
 				797E05B216B4D16500EEC115 /* SMYogi2Controller.m */,
 				792E2D7816B447B300493A66 /* Supporting Files */,
+				797E05BB16B51E0C00EEC115 /* SMFoodSelect2ViewController.h */,
+				797E05BC16B51E0C00EEC115 /* SMFoodSelect2ViewController.m */,
 				792E2DA716B479E300493A66 /* SMFoodSelectViewController.h */,
 				792E2DA816B479E300493A66 /* SMFoodSelectViewController.m */,
 			);
@@ -362,6 +374,7 @@
 				7905AC3C16B4BC850003EE42 /* tmb_Chicken-Noodle-Soup-&-Salad.png in Resources */,
 				7905AC3D16B4BC850003EE42 /* turkey-sandwhich.png in Resources */,
 				7905AC3F16B4C0190003EE42 /* Open_Door_Gastropub_steak_n_eggs.png in Resources */,
+				797E05BA16B51AA900EEC115 /* pmph1.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +390,7 @@
 				792E2D9116B447B300493A66 /* SMViewController.m in Sources */,
 				792E2DA916B479E300493A66 /* SMFoodSelectViewController.m in Sources */,
 				797E05B316B4D16500EEC115 /* SMYogi2Controller.m in Sources */,
+				797E05BD16B51E0C00EEC115 /* SMFoodSelect2ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
